@@ -1,0 +1,139 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+input {
+  font-size: 18px;
+}
+
+/* body {
+    line-height: 1.4;
+    color: #263f27;
+    font-family: Helvetica, Arial, sans-serif;
+  } */
+body {
+  perspective: 800px;
+  height: 100vh;
+  line-height: 1.4;
+  color: #263f27;
+  margin: 0;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #ea5c54; /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+   #212937 0%,
+    #FA8072 100%
+  ); /* FF3.6+ */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    color-stop(0%,  #212937),
+    color-stop(100%,  #FA8072)
+  ); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(
+    -45deg,
+   #212937 0%,
+    #FA8072100%
+  ); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(
+    -45deg,
+   #212937 0%,
+   #FA8072100%
+  ); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #212937 0%,#FA8072 100%); /* IE10+ */
+  background: linear-gradient(135deg, #212937 0%, #FA8072 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EA5C54 ', endColorstr='#bb6dec',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+h1 {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom:20px;
+  color: #6495ED;
+}
+
+input {
+  border: 1px solid #40E0D0;
+  padding: 19px 18px;
+  /* border: none; */
+  outline: none;
+  transition: width 1.5s ease-in-out;
+  width: 51%;
+  border-radius: 21px;
+  margin: 8px 0;
+
+  box-sizing: border-box;
+}
+input:focus {
+  width: 100%;
+}
+button {
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: #DE3163;
+  border-radius: 5px;
+  color: white;
+  width: 80%;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: blue;
+  color: #59b3bd;
+  border: 1px solid #59b3bd;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:disabled {
+  cursor: default;
+  background: ##59b3bd;
+}
+
+/* Join Page Styles */
+
+.centered-form {
+  /* background: #333744; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border-bottom {
+  border-bottom: 1px solid ##59b3bd;
+}
+.border-bottom-2 {
+  border-bottom: 5px solid ##59b3bd;
+  width: 30%;
+}
+.centered-form__box {
+  box-shadow: 0px 0px 17px 1px #1d1f26;
+  background: #f7f7fa;
+  padding: 24px;
+  /* width: 250px; */
+}
+
+.centered-form button {
+  width: 100%;
+}
+
+.centered-form input {
+  margin-bottom: 16px;
+}
